@@ -23,7 +23,9 @@ Read more about the Apiato container installer in the [docs](http://apiato.io/do
 
 > You should have fully installed working Apiato including Passport.
 
-> composer require elshaden/apiato-sanctum
+>To Install Sanctum in Existing Apiato Application
+>``` 
+>composer require elshaden/apiato-sanctum
 
 > You need To Change the  ***use HasApiTokens***  in the ***App\Ship\Parents\Models\UserModel*** to ***use Sanctum Trait***
 >
