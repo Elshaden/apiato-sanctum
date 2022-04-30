@@ -44,7 +44,7 @@ Read more about the Apiato container installer in the [docs](http://apiato.io/do
 >````
 >     ->middleware(['auth:sanctum'])
 
-````
+
 
 
 
