@@ -26,7 +26,8 @@ Read more about the Apiato container installer in the [docs](http://apiato.io/do
 > composer require elshaden/apiato-sanctum
 
 > You need To Change the  ***use HasApiTokens***  in the ***App\Ship\Parents\Models\UserModel*** to ***use Sanctum Trait***
-> 
+>
+> ````
 > use Laravel\Sanctum\HasApiTokens;
 
 > php artisan migrate ***this will create the sanctum_personal_access_token*** table
@@ -38,8 +39,8 @@ Read more about the Apiato container installer in the [docs](http://apiato.io/do
 > You can have a look at the routes to understand how to use the Sanctum in Apiato
 
 > To use the Sanctum middleware you need to change the middleware in your routes to 
-````
-     ->middleware(['auth:sanctum'])
+>````
+>     ->middleware(['auth:sanctum'])
 
 ````
 
