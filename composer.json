@@ -1,7 +1,32 @@
 {
-    "name": "apiato/sanctum",
-    "description": "Sanctum Container for apiato.",
+    "name": "elshaden/apiato-sanctum",
+    "authors": [
+        {
+            "name": "Salah Elabbar",
+            "email": "salah@elshaden.com"
+        }
+    ],
+    "keywords": [
+        "Apiato",
+        "API",
+        "Framework",
+        "sanctum",
+        "auth",
+        "SPA",
+        "Autenticator",
+        "Laravel Sanctum"
+    ],
+    "description": "Implementation of Laravel Sanctum in Apiato Projects .",
+    "type": "apiato-container",
+    "license": "MIT",
     "require": {
-        "laravel/sanctum": "^2.14.1"
+        "laravel/sanctum": "^2.11"
+    },
+    "extra": {
+        "apiato": {
+            "container": {
+                "name": "Sanctum"
+            }
+        }
     }
 }
