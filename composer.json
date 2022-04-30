@@ -1,0 +1,7 @@
+{
+    "name": "apiato/sanctum",
+    "description": "Sanctum Container for apiato.",
+    "require": {
+        "laravel/sanctum": "^2.14.1"
+    }
+}
