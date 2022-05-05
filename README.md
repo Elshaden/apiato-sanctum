@@ -4,7 +4,6 @@
 
 #### This Container is used to make use of Laravel Sanctum Authentication
 
-#### Note: This container is not fully tested, use with caution.
 
 ### Installation
 Only Works in Existing Apiato Application   <br>
