@@ -2,7 +2,7 @@
 
 namespace App\Containers\Vendor\Sanctum\Providers;
 
-use App\Ship\Parents\Providers\MainServiceProvider as ParentMainServiceProvider;
+use App\Ship\Parents\Providers\MainProvider as ParentMainServiceProvider;
 use App\Containers\Vendor\Sanctum\Providers\SanctumServiceProvider;
 /**
  * The Main Service Provider of this container, it will be automatically registered in the framework.
