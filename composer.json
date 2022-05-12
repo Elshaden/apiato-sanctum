@@ -20,7 +20,7 @@
     "type": "apiato-container",
     "license": "MIT",
     "require": {
-        "laravel/sanctum": "^2.11"
+        "laravel/sanctum": "^2.11|^2.14"
     },
     "extra": {
         "apiato": {
