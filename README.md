@@ -55,6 +55,18 @@ Read more about the Apiato container installer in the [docs](http://apiato.io/do
 
 #### Sanctum will work with existing Permissions and Roles as you would expect with Passport.
 
+
+## Sanctum uses web guard, there is no need to create a sanctum guard.
+### Note: when seeding existing users, permissions or anythng that uses the guard name you need to skip adding sanctum guard
+
+`
+if($guardName == 'sanctum') continue;
+`
+
+
+
+
+
 ## Thanks for using Apiato-Sanctum
 
 #### I welcome any feedback, questions or suggestions.
