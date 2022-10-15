@@ -17,7 +17,7 @@ Read more about the Apiato container installer in the [docs](http://apiato.io/do
 
 <br>
 <br>
-
+#### Version 2.0 Has Been Updated to support Sanctum 3.0
 #### Steps to Install
 
 > You should have fully installed working Apiato including Passport.
