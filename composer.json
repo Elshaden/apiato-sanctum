@@ -21,14 +21,8 @@
     "license": "MIT",
     "require": {
         "laravel/sanctum": "^3.0",
-        "php": "^8.0.2",
-        "ext-json": "*",
-        "illuminate/console": "^9.21",
-        "illuminate/contracts": "^9.21",
-        "illuminate/database": "^9.21",
-        "illuminate/support": "^9.21"
-
-    },
+      
+       },
     "extra": {
         "apiato": {
             "container": {
