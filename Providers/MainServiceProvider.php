@@ -2,36 +2,35 @@
 
 namespace App\Containers\Vendor\Sanctum\Providers;
 
-use App\Ship\Parents\Providers\MainServiceProvider as ParentMainServiceProvider;
-use App\Containers\Vendor\Sanctum\Providers\SanctumServiceProvider;
+//use App\Ship\Parents\Providers\ServiceProvider as ParentMainServiceProvider;
+use App\Containers\Vendor\Sanctum\Models\Sanctum as SanctumModel;
+use Illuminate\Support\ServiceProvider;
+
 /**
  * The Main Service Provider of this container, it will be automatically registered in the framework.
  */
-class MainServiceProvider extends ParentMainServiceProvider
+class MainServiceProvider extends ServiceProvider
 {
     /**
-     * Container Service Providers.
+     * Bootstrap the application services.
      */
-    public array $serviceProviders = [
-        // InternalServiceProviderExample::class,
-        SanctumServiceProvider::class,
-    ];
+    public function boot(): void
+    {
+        $this->publishes([
+            __DIR__ . '/../Configs/sanctum.php' => app_path('Ship/Configs/sanctum.php'),
+        ]);
+        Sanctum::usePersonalAccessTokenModel(SanctumModel::class);
+    }
 
     /**
-     * Container Aliases
-     */
-    public array $aliases = [
-        // 'Foo' => Bar::class,
-    ];
-
-    /**
-     * Register anything in the container.
+     * Register the application services.
      */
     public function register(): void
     {
-        parent::register();
-
-        // $this->app->bind(UserRepositoryInterface::class, UserRepository::class);
-        // ...
+        $this->mergeConfigFrom(
+            __DIR__ . '/../Configs/sanctum.php', 'sanctum'
+        );
     }
+
+
 }

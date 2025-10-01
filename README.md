@@ -17,6 +17,9 @@ Read more about the Apiato container installer in the [docs](http://apiato.io/do
 
 <br>
 <br>
+
+#### Version 3.0 Has Been Updated to support Sanctum 4.0 
+
 #### Version 2.0 Has Been Updated to support Sanctum 3.0
 #### Steps to Install
 

@@ -14,4 +14,7 @@ class Sanctum extends PersonalAccessToken
      * A resource key to be used in the serialized responses.
      */
     protected string $resourceKey = 'Sanctum';
+
+
+
 }
