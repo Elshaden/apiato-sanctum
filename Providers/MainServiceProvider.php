@@ -5,7 +5,7 @@ namespace App\Containers\Vendor\Sanctum\Providers;
 //use App\Ship\Parents\Providers\ServiceProvider as ParentMainServiceProvider;
 use App\Containers\Vendor\Sanctum\Models\Sanctum as SanctumModel;
 use Illuminate\Support\ServiceProvider;
-
+use Laravel\Sanctum\Sanctum;
 /**
  * The Main Service Provider of this container, it will be automatically registered in the framework.
  */
